@@ -21,10 +21,10 @@
 
 
 // Solution:
-function countRepeatNumber(array) {
+function countRepeatNumber(array, findNumber) {
     let count = 0;
-    for (let item of numbers) {
-        if (item === 25) {
+    for (let item of array) {
+        if (item === findNumber) {
             count += 1;
         }
     }
@@ -34,5 +34,5 @@ function countRepeatNumber(array) {
 const numbers = [5, 6, 11, 12, 98, 5];
 const numbers2 = [5, 6, 11, 12, 98, 5];
 
-const output = countRepeatNumber(numbers2);
+const output = countRepeatNumber(numbers, 5);
 console.log(output);
